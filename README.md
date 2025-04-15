@@ -25,7 +25,7 @@
 
 ### Mysql
 - [Mysql存储引擎,MyISAM和InnoDB](db/mysql.md)
-- [Mysql索引](db/mysql.md)
+- [Mysql索引，索引数据结构](db/mysql.md)
 - [Mysql的日志binlog，redo log，undo log相关问题](db/mysql.md)
 - [Mysql的事务，ACID，隔离级别，脏读幻读，MVCC](db/mysql.md)
 - [Mysql的锁，锁类型，行锁表锁，共享排他，乐观锁等](db/mysql.md)
@@ -38,7 +38,9 @@
 - [Redis的数据结构，高频问题](cache/redis.md)
 - [Redis实现限流，限流算法和方案](cache/redis.md)
 - [Redis实现分布式锁](cache/redis.md)
+- [Redis事务](cache/redis.md)
 - [Redis缓存读写策略，以及如何选择](cache/redis.md)
+- [Redis集群Cluster和Sentinel](cache/redis.md)
 ### Java相关
 - [JVM内存模型和区域](java/jvm.md)
 - [JVM垃圾回收](gc/java_gc.md)
@@ -48,8 +50,10 @@
 - [实战-JVM调优实例](java/java.md)
 
 ### 其他中间件
-#### Kafka
+#### Kafka，RocketMQ
 
+- RocketMQ顺序支持较好，支持事务消息，定时消息，消息过滤（kafka使用kafka stream）,支持服务端触发重新发送
+- Kafka的顺序是通过partition支持的，一个partition里面是顺序性
 
 
 #### Zookeeper
