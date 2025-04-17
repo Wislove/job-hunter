@@ -42,10 +42,7 @@
 - [Redis缓存读写策略，以及如何选择](cache/redis.md)
 - [Redis集群Cluster和Sentinel](cache/redis.md)
 ### Java相关
-- [JVM内存模型和区域](java/jvm.md)
-- [JVM垃圾回收](gc/java_gc.md)
-- [类加载和双亲委派模型](java/jvm.md)
-- [JVM调优相关理论和实践方法](java/jvm.md)
+- [JVM内存模型和GC](java/jvm_gc.md)
 - [实战-线上OOM排查](java/java.md)
 - [实战-JVM调优实例](java/java.md)
 
@@ -59,7 +56,6 @@
 #### Zookeeper
 
 #### ElasticSearch
-
 
 
 ### 系统设计相关
