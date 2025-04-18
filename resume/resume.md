@@ -13,14 +13,15 @@
 
 ## 🛠️ 技术技能
 ### **核心领域**
-- **Java**：9年Java全职开发，熟悉JVM，并发，Spring Boot，Spring Cloud与Spring Cloud Alibaba微服务体系和相关中间件
-- **数据库**：熟悉Mysql和Redis从事项目标配；了解Mongodb（主要用于文件和日志存储）；了解ElasticSearch（主要用于日志存储）；了解达梦（主要为DM8.0做国产化适配数据库）
-- **主要中间件**：熟悉**Redis**（主要做缓存，也做过全文检索），熟悉**Kafka**（主要用于做大数据平台任务处理），熟悉**RocketMQ**（主要用于业务消息队列）
+- **Java**：9年Java全职开发，熟悉JVM（使用jstack，arthas排查过gc问题），并发，Spring Boot，Spring Cloud与Spring Cloud Alibaba微服务体系和相关中间件
+- **数据库**：熟悉Mysql和Redis（从事项目标配）；了解Mongodb（主要用于文件和日志存储）；了解ElasticSearch（主要用于日志存储）；了解达梦（主要为DM8.0做国产化适配数据库）
+- **主要中间件**：熟悉**Redis**（主要做缓存，也做过全文检索，分布式锁），熟悉**Kafka**（主要用于做大数据平台任务异步处理），熟悉**RocketMQ**（主要用于业务消息队列）
 - **业务领域**：从事过ERP，OA，熟悉Activiti工作流；从事过物联网开发，熟悉MQTT，Modbus，PLC等各种协议；从事过大数据平台开发，熟悉BI和数据流式处理，数据可视化
 ### **其他领域**
 - **Golang**：使用Gin，Gorm，Mongodb搭建个人项目后台，熟悉基础CRUD，异常处理，熟悉基础容器库，操作Docker，K8s等
 - **NodeJs**：使用NodeJs写过游戏助手，熟悉**ProtoBuf**，**GRPC**，使用NestJS和React全栈开发，搭建过个人博客项目。熟悉NodeJs的async/await，Promise等
 - **Kubernetes**：在公网服务器上搭建过Kubernetes集群，并提供服务，熟悉Sealos安装Kubernetes集群，熟悉Yaml配置文件编写，熟悉Helm安装应用，熟悉Pod的基本命令，熟悉Redis和Mongodb的PV，PVC数据持久化的配置，持续学习中
+- **Lua**：逆向过某小游戏，研究过该游戏框架Skynet，了解Lua语言的基础语法，以及LuaRocks的使用
 
 
 ## 💼 工作经历与重点项目
