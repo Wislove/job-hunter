@@ -23,6 +23,11 @@
 
 ## Java岗位的准备顺序
 
+### Java相关
+- [JVM内存模型和GC](java/jvm_gc.md)
+- [实战-线上OOM排查](java/java.md)
+- [实战-JVM调优实例](java/java.md)
+
 ### Mysql
 - [Mysql存储引擎,MyISAM和InnoDB](db/mysql.md)
 - [Mysql索引，索引数据结构](db/mysql.md)
@@ -41,17 +46,12 @@
 - [Redis事务](cache/redis.md)
 - [Redis缓存读写策略，以及如何选择](cache/redis.md)
 - [Redis集群Cluster和Sentinel](cache/redis.md)
-### Java相关
-- [JVM内存模型和GC](java/jvm_gc.md)
-- [实战-线上OOM排查](java/java.md)
-- [实战-JVM调优实例](java/java.md)
 
 ### 其他中间件
 #### Kafka，RocketMQ
 
 - RocketMQ顺序支持较好，支持事务消息，定时消息，消息过滤（kafka使用kafka stream）,支持服务端触发重新发送
 - Kafka的顺序是通过partition支持的，一个partition里面是顺序性
-
 
 #### Zookeeper
 
