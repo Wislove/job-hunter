@@ -21,7 +21,8 @@
 #### [问面试官的问题](tongyong.md)
 #### [模拟面试](#模拟面试)
 
-## Java岗位的准备顺序
+
+## Java八股文
 
 ### Java相关
 - [JVM内存模型和GC](java/jvm_gc.md)
@@ -49,14 +50,8 @@
 
 ### 其他中间件
 #### Kafka，RocketMQ
-
 - RocketMQ顺序支持较好，支持事务消息，定时消息，消息过滤（kafka使用kafka stream）,支持服务端触发重新发送
 - Kafka的顺序是通过partition支持的，一个partition里面是顺序性
-
-#### Zookeeper
-
-#### ElasticSearch
-
 
 ### 系统设计相关
 - 安全设计，常见加密算法：MD5,SHA,对称加密(AES,DES),非对称(RSA,DSA)
@@ -82,10 +77,7 @@
 - Nginx实现负载均衡的方案
 - 读写分离如何实现
 
-## 业务领域
-
 ## 模拟面试
-
 - [DeepSeek](https://www.deepseek.com/)
 - [豆包](https://www.doubao.com/chat/)
 
