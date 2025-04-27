@@ -12,13 +12,17 @@
 ---
 
 ## 🛠️ 技术技能
-### **核心领域**
-- **Java**：9年Java全职开发，熟悉JVM（使用jstack，arthas排查过gc问题），并发，Spring Boot，Spring Cloud与Spring Cloud Alibaba微服务体系和相关中间件
-- **数据库**：熟悉Mysql和Redis（从事项目标配）；了解Mongodb（主要用于文件和日志存储）；了解ElasticSearch（主要用于日志存储）；了解达梦（主要为DM8.0做国产化适配数据库）
-- **主要中间件**：熟悉**Redis**（主要做缓存，也做过全文检索，分布式锁），熟悉**Kafka**（主要用于做大数据平台任务异步处理），熟悉**RocketMQ**（主要用于业务消息队列）
-- **业务领域**：从事过ERP，OA，熟悉Activiti工作流；从事过物联网开发，熟悉MQTT，Modbus，PLC等各种协议；从事过大数据平台开发，熟悉BI和数据流式处理，数据可视化
+### **核心领域（Java）**
+- 9年Java全职开发，熟悉JVM（使用jstack，arthas排查过gc问题），熟悉并发，Spring Boot，Spring Cloud与Spring Cloud Alibaba微服务体系和相关中间件
+- 熟悉Mysql和Redis（从事项目标配，熟悉相关数据一致性方案，高可用架构）；了解Mongodb（主要用于文件和日志存储）；了解ElasticSearch（主要用于日志存储）；了解达梦（主要为DM8.0做国产化适配数据库）
+- 熟悉**Redis**（主要做缓存，也做过全文检索，分布式锁，熟悉Redisson基础模块），熟悉**Kafka**（主要用于做大数据平台任务异步处理），熟悉**RocketMQ**（主要用于业务系统消息队列，熟悉事务消息队列）
+- 熟悉Nginx基础配置，负载均衡，限流，配置过Nginx_Lua模块，用于流量转发，防御DDos网络攻击
+- 熟悉分布式系统设计，熟悉分布式事务，熟悉分布式锁，熟悉分库分表设计，构建过分布式Pass平台，熟悉相关的Nacos，Zookeeper,Sentinel,Zuul，Mycat等组件
+- 熟悉Jpom和Jenkis，整合Gitlab CI/CD，整合Docker持续集成，持续交付
+- 熟悉ERP，OA，熟悉Activiti工作流自定义；从事过物联网开发，熟悉MQTT，Modbus，PLC等各种协议；从事过大数据平台开发，熟悉BI和数据流式处理，数据可视化；熟悉支付宝和微信支付流程
 ### **其他领域**
-- **Golang**：使用Gin，Gorm，Mongodb搭建个人项目后台，熟悉基础CRUD，异常处理，熟悉基础容器库，操作Docker，K8s等
+- **前端**：熟悉React和Antd，熟悉函数式组件和Redux，Umi等，开发过管理系统和门户首页；使用过Uniapp，开发过工具整合类小程序和APP
+- **Golang**：使用Gin，Gorm，Mongodb搭建个人项目后台，熟悉基础CRUD，异常处理，熟悉Channel，熟悉基础容器库操作Docker，K8s等
 - **NodeJs**：使用NodeJs写过游戏助手，熟悉**ProtoBuf**，**GRPC**，使用NestJS和React全栈开发，搭建过个人博客项目。熟悉NodeJs的async/await，Promise等
 - **Kubernetes**：在公网服务器上搭建过Kubernetes集群，并提供服务，熟悉Sealos安装Kubernetes集群，熟悉Yaml配置文件编写，熟悉Helm安装应用，熟悉Pod的基本命令，熟悉Redis和Mongodb的PV，PVC数据持久化的配置，持续学习中
 - **Lua**：逆向过某小游戏，研究过该游戏框架Skynet，了解Lua语言的基础语法，以及LuaRocks的使用
@@ -27,15 +31,15 @@
 ## 💼 工作经历与重点项目
 
 ### **四川XX软件有限公司 | 软件研发**（2018.12 - 至今）
-#### 1. XXX中院院区智能化安防项目（物联网，项目标的4000万+，含硬件）
-- **技术栈**：Java 11/Spring Boot/Spring Cloud/Kafka/Redis/Netty/Spring Data Jpa/React/docker
-- **业务价值**：支撑1000+智能设备数据采集，统一管控，日均10万级事件处理
+#### 1. XXX中院院区智能化安防项目（物联网）
+- **技术栈**：Java 11/Spring Boot/Spring Cloud/Kafka/Redis/Netty/React/Docker
+- **业务价值**：支撑1000+智能设备数据采集，统一管控，日均10万级设备事件处理，智能分析报警，视频安防，智能巡更路径规划
 - **职责**：技术负责人（主程序员，协调安排开发工作）
 - **成果**：
     - 基于Netty实现多协议适配层，包括：tcp，mqtt，modbus tcp，bacnet/ip等相关协议设备，实现设备统一上报和下发控制；
     - 借助EMQ，解决了mqtt设备消息上报时堆积，来不及消费的问题；
     - 使用kafka作为消息总线，解耦设备消息跟业务。
-    - 基于Node-Red二次开发，开了适合业务的规则引擎，实现设备规则可配置，场景联动可配置等功能，简化了设备差异，协议差异相关问题，减少了硬编码量。
+    - 基于Node-Red二次开发，实现可动态配置规则引擎，场景联动，可编排流程等自定义功能，简化了设备差异，协议差异等相关问题，减少了硬编码量。
 #### 2. XXX通用研发平台（通用Pass平台）
 - **技术栈**：Java/Redis分布式锁/Kafka/ShardingSphere
 - **业务价值**：通用业务开发平台，微服务架构，统一认证，统一业务开发规范，接入公司大小业务应用100+

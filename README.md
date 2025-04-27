@@ -61,9 +61,8 @@
 - 使用MQTT实现Web消息推送(没想到MQTT也可以吧)
 
 ### 分布式
-- 分布式理论CAP
 - 分布式基础算法：Paxos，Raft
-- 分布式事务以及实现方案
+- [分布式CAP，BASE理论及分布式事务以及实现方案](https://developer.aliyun.com/article/1460045)
 - 分布式锁以及实现方案
 - 分布式配置中心
 - 分布式协议：HTTP和RPC
