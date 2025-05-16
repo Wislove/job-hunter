@@ -24,10 +24,24 @@
 
 ## Java八股文
 
+### [Spring相关问题](spring/springboot.md)
+- [SpringBoot启动原理，会做哪些事情](spring/springboot.md)
+- [SpringBoot启动慢，该如何优化](spring/springboot.md)
+- Spring的Bean加载过程，Bean初始化过程
+- Spring Bean为什么默认单例模式？什么场景会使用到非单例模式？
+- Spring中用到的设计模式和实际例子
+- Spring IOC的原理和实现逻辑
+- Spring APO的实现原理， 动态代理和静态代理的区别，实际例子
+- Spring 声明式事务的传播和失效
+- Spring 如何解决循环依赖
+- Spring 相较使用的比较少的注解: @PostConstruct, @PreDestroy
+- Spring Boot应用运行一段时间，内存占用越来越高，响应越来越慢，该如何优化，谈谈思路（内存泄漏）
+- Spring Boot应用启动一段时候，自动exit退出，可能是哪些原因，谈谈思路（容器退出，JVM退出）
 ### Java相关
 - [JVM内存模型和GC](java/jvm_gc.md)
 - [实战-线上OOM排查](java/java.md)
 - [实战-JVM调优实例](java/java.md)
+- Java的双亲委派模型，如何破坏双亲委派
 
 ### Mysql
 - [Mysql存储引擎,MyISAM和InnoDB](db/mysql.md)
@@ -49,9 +63,15 @@
 - [Redis集群Cluster和Sentinel](cache/redis.md)
 
 ### 其他中间件
-#### Kafka，RocketMQ
+#### 消息队列Kafka，RocketMQ
 - RocketMQ顺序支持较好，支持事务消息，定时消息，消息过滤（kafka使用kafka stream）,支持服务端触发重新发送
 - Kafka的顺序是通过partition支持的，一个partition里面是顺序性
+
+#### Nginx相关
+
+#### EleasticSearch
+
+
 
 ### 系统设计相关
 - 安全设计，常见加密算法：MD5,SHA,对称加密(AES,DES),非对称(RSA,DSA)
