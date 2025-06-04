@@ -25,28 +25,39 @@
 ## Java八股文
 
 ### [Spring相关问题](spring/springboot.md)
-- [SpringBoot启动原理，会做哪些事情](spring/springboot.md)
-- [SpringBoot启动慢过程很慢，该如何优化，有哪些思路](spring/springboot.md)
+- [SpringBoot启动原理，会做哪些事情?](spring/springboot.md)
+- [SpringBoot启动慢过程很慢，该如何优化，有哪些思路?](spring/springboot.md)
 - Spring的Bean加载过程，Bean初始化过程
 - Spring Bean为什么默认单例模式？哪些场景会使用到非单例模式？
 - Spring中用到的设计模式和实际例子
-- Spring IOC的原理和实现逻辑
+- Spring IOC的原理和实现逻辑与理解
 - Spring AOP的实现原理， 动态代理和静态代理的区别，实际例子
-- Spring 声明式事务的传播和失效
-- Spring 如何解决循环依赖(三级缓存，为什么三级缓存)
-- Spring 相较使用的比较少的注解: @PostConstruct, @PreDestroy
+- Spring 声明式事务的传播和失效，事务在哪些情况会失效
+- Spring 如何解决循环依赖(三级缓存，为什么三级缓存)，@Lazy为何能解决循环依赖?
 - Spring Boot应用运行一段时间，内存占用越来越高，响应越来越慢，该如何优化，谈谈思路（内存泄漏）
-- Spring Boot应用启动一段时候，自动exit退出，可能是哪些原因，谈谈思路（容器退出，JVM退出）
-### Java相关
+- Spring Boot应用启动一段时候，自动exit退出，可能是哪些原因，谈谈思路（容器退出，JVM退出，运行时马上退出，运行一段时间后退出）
+### JVM相关
 - [JVM内存模型和GC的相关算法](java/jvm_gc.md)
 - Java类加载过程，如何从Java源文件加载到JVM内存中整个过程
-- Java类加载的双亲委派模型，如何破坏双亲委派
+- Java类加载的双亲委派模型，如何破坏双亲委派?
+- Tomcat为什么要重写类加载?
+- 频繁GC发生的原因可能有哪些，Young GC和Full GC?
 - [实战-JVM调优实际例子，频繁Full GC发生的排查](java/java.md)
 
 #### Java并发和多线程
 
-- 如何保证线程顺序执行，同时执行？
-- 如何保证线程同时进行
+- 如何保证线程顺序执行，交替执行，同时执行？
+- 什么是用户态和内核态，以及相关理解
+- epoll模型和多路IO复用的理解
+- 线程锁的理解：synchronized， ReentrantLock， ReadWriteLock， 乐观锁CAS, 锁的种类，锁的状态(偏向，轻量，重量级)，锁的获取，锁的释放，锁的升级，锁的降级，锁的死锁，锁的优化，锁的优化方法，锁的优化策略，锁的优化技巧，锁的优化经验
+- AQS：AQS的原理，AQS的实现原理，AQS的实现方法，AQS的实现策略，AQS的实现技巧，AQS的实现经验
+- ThreadLocal以及ThreadLocal的实现原理，使用场景，可传播ThreadLocal的使用场景和实际例子
+- ThreadLocal造成内存泄漏的例子，如何避免
+- 其他并发和线程安全的容器: ConcurrentHashMap，CopyOnWriteArrayList的理解
+- 线程之间通信：volatile，Semaphore，CountDownLatch，CyclicBarrier
+- Fork/Join模型的实际应用，MapReduce的操作
+- 线程池的应用：线程池中线程能复用的原理，线程池并行计算的例子
+- CompleteableFuture的实际使用例子
 
 ### Mysql
 - [Mysql存储引擎,MyISAM和InnoDB的区别](db/mysql.md)
@@ -81,12 +92,17 @@
 #### Nginx相关
 
 #### EleasticSearch
-
+- ES的深度分页如何优化？
+- ES的倒排索引的理解(什么是倒排索引)，为什么使用倒排索引？
+- ES中超过1W条的查询报错的原因是什么，如何解决思路是什么?
+- ES如何设计分片数，才能兼顾写入性能和查询效率? 
 
 ### 系统设计相关
 - 安全设计，常见加密算法：MD5,SHA,对称加密(AES,DES),非对称(RSA,DSA)
-- 敏感词过滤的方案，用户输入敏感词，如果过滤
-- 数据脱敏处理方案：存储脱敏，查询返回脱敏的方案
+- 敏感词过滤的方案，用户输入敏感词，如何过滤？
+- 数据脱敏处理方案：存储脱敏，查询返回脱敏的方案？
+- 如何实现不停机更新？
+- 
 - 使用Websocket和SSE实现Web消息推送
 - 使用MQTT实现Web消息推送(没想到MQTT也可以吧)
 
